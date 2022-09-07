@@ -11,7 +11,5 @@ public class Test7 {
 
     }
 
-    private int getSum() {
-        return -1;
-    }
+    
 }
