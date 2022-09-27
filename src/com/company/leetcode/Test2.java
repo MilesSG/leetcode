@@ -27,11 +27,16 @@ public class Test2 {
     public static void main(String[] args) {
         ListNode headA = new ListNode(2);
         headA.next = new ListNode(4);
-        headA.next = new ListNode(3);
+        headA.next.next = new ListNode(3);
         ListNode headB = new ListNode(5);
         headB.next = new ListNode(6);
-        headB.next = new ListNode(4);
-        System.out.println(addTwoNumbers(headA, headB));
+        headB.next.next = new ListNode(4);
+        ListNode res = addTwoNumbers(headA, headB);
+        ListNode cur = res;
+        while (cur != null) {
+            System.out.println(cur.val);
+            cur = cur.next;
+        }
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
