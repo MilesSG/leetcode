@@ -11,7 +11,8 @@ public class Test10 {
 
     }
 
-    public boolean isMatch(String s, String p) {
-        return false;
+    public int isMatch(String s, String p) {
+        int a = 2, b = 0;
+        return b;
     }
 }
